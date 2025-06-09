@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-anthropic" %}
-{% set version = "0.40.7" %}
+{% set version = "0.40.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_anthropic-{{ version }}.tar.gz
-  sha256: 8680797dbaa2808e4e2831de500e2dd2c6f9064eb4c887857b3b562c9d583673
+  sha256: 679aa497b494f6265ff7a749d4178ccb4683d98fa5dc20a1cca2b01bcfffc150
 
 build:
   noarch: python
