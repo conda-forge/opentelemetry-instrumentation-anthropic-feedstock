@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-anthropic" %}
-{% set version = "0.45.1" %}
+{% set version = "0.45.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_anthropic-{{ version }}.tar.gz
-  sha256: e40cd720954fa0d3bac097489cd67d35c9a78dd09b3729b9fda54cd23cf578f6
+  sha256: 99759047d98e66d9066dd9b75f0908de6bfd5aaf1154eb1b645e2d0a4d1aa0fc
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.11
+    - opentelemetry-semantic-conventions-ai >=0.4.12,<0.5
     - typing_extensions
   run_constrained:
     - anthropic >=0.36.0
