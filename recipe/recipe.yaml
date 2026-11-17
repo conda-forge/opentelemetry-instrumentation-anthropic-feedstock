@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-anthropic
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_anthropic-${{ version }}.tar.gz
-  sha256: c7e0497da4c04e8f7dac9fdfd868aefe90a89f08b93133429c09697225631750
+  sha256: 7f3c4b5827d9136c39a412b6c5c81caa5a3fa0385381e9c60e15126ebfbe3f54
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
